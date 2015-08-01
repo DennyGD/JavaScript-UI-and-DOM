@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing events</title>
+</head>
+<body>
+<div id="root">
+    <a href="#" class="button"></a>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+    <a href="#" class="button"></a>
+    <a href="#" class="button"></a>
+    <br/><div class="content">Content</div>
+    <a href="#" class="button"></a>
+</div>
+<div>
+    other div
+</div>
+    <script src="event-model.js"></script>
+    <script>
+        var func = solve();
+        func('root');
+    </script>
+</body>
+</html>
