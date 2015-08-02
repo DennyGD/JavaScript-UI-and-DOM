@@ -54,8 +54,7 @@ module.exports = function () {
 
             // http://www.diveintojavascript.com/core-javascript-reference/the-isnan-function
             areValid = arr.every(function (item) {
-                var isOK = (typeof item === 'string') || (typeof item === 'number');
-               return isOK;
+                return (typeof item === 'string') || (typeof item === 'number');
             });
 
             return areValid;
