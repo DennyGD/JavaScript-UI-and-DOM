@@ -2,18 +2,13 @@
     function solve() {
         return function (selector, count) {
             var isString = typeof selector === 'string',
-                isDomElement = selector instanceof HTMLElement,
                 $targetElement,
                 $list;
 
-            if (!isString && !isDomElement) {
+            if (!isString) {
                 throw new Error('Expected: selector to be either string or DOM element.');
             }
-
-            if (selector[0] !== '#') {
-                selector = '#' + selector;
-            }
-
+            
             $targetElement = $(selector);
 
             if ($targetElement == null) {
