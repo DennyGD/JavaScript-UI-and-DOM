@@ -6,9 +6,9 @@
                 $list;
 
             if (!isString) {
-                throw new Error('Expected: selector to be either string or DOM element.');
+                throw new Error('Expected: selector to be string.');
             }
-            
+
             $targetElement = $(selector);
 
             if ($targetElement == null) {
