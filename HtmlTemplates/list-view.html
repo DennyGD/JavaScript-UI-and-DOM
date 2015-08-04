@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Last task</title>
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <ul id="books-list" data-template="book-item-template"></ul>
+
+    <script id="book-item-template" type="…">
+      <li class="book-item">
+        <a href="/#books/{{id}}">
+          <strong>{{title}}</strong>
+        </a>
+      </li>
+    </script>
+
+    <script src="list-view.js"></script>
+</body>
+</html>
